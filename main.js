@@ -1,7 +1,6 @@
 const url = "https://api.dictionaryapi.dev/api/v2/entries/en/";
 const result = document.getElementById("result");
 const sound = document.getElementById("sound");
-
 const btn = document.getElementById("search-btn")
 
 btn.addEventListener("click", () => {
@@ -15,7 +14,7 @@ btn.addEventListener("click", () => {
         <div class="word">
                 <h3>${inpWord}</h3>
                 <button onclick="playSound()">
-                    <i class="fa-solid fa-volume-high"></i>
+                <i class="fas fa-volume-up"></i
                 </button>
             </div>
             <div class="details">
@@ -34,6 +33,7 @@ btn.addEventListener("click", () => {
                 </p>`;
                 sound.setAttribute("src", `https:${data[0].
                     phonetics[0].audio}`);
+                    console.log(sound);
             
                 
     })
@@ -43,3 +43,7 @@ btn.addEventListener("click", () => {
         </h3>`;
     })
 });
+function playSound() {
+    sound.play();
+}
+
