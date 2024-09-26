@@ -43,7 +43,3 @@ btn.addEventListener("click", () => {
         </h3>`;
     })
 });
-function playSound() {
-    sound.play();
-}
-
