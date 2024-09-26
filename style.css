@@ -16,7 +16,7 @@ body{
 .container{
     
     background-color: rgb(255, 205, 220);
-    width: 70vmin;
+    width: 90vmin;
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
